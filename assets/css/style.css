@@ -253,7 +253,7 @@ img {
   color: #8750f7;
   border: 1px solid #8750f7;
   border-radius: 50%;
-  transition: 0.35s ease-in-out;
+  transition: 0.38s linear;
 }
 .button-box ul li a:hover {
   background-color: #8750f7;
@@ -268,7 +268,7 @@ img {
   width: 440px;
   height: 470px;
   transform: rotate(4.29deg);
-  transition: 0.3s;
+  transition: 0.35s;
 }
 .hero-image-me:hover img {
   transform: none;

@@ -185,7 +185,7 @@ Description: Divine - Personal Portfolio HTML5 Template
 // Navbar Ends Here 
 
 
-
+// Profile-Services Begins Here 
 .row {
   max-width: 1135px;
   min-height: 110vh;
@@ -254,16 +254,18 @@ Description: Divine - Personal Portfolio HTML5 Template
 
   & ul{
     display: flex;
+    // transition: 5s;
 
     & li {
       margin: 0 0 0 20px;
+      // transition: 5s;
 
       & a {
         padding: 0.5em;
         color: #8750f7;
         border: 1px solid #8750f7;
         border-radius: 50%;
-        transition: 0.35s ease-in-out;
+        transition: 0.38s linear;
 
         &:hover {
           background-color: #8750f7;
@@ -283,7 +285,7 @@ Description: Divine - Personal Portfolio HTML5 Template
     width: 440px;
     height: 470px;
     transform: rotate(4.29deg);
-    transition: 0.3s;
+    transition: 0.35s;
   }
 
   &:hover img {
@@ -295,6 +297,7 @@ Description: Divine - Personal Portfolio HTML5 Template
 }
 
 
+// Number Count Section
 .funfact-area {
   margin-top: 70px;
   display: flex;
@@ -322,3 +325,23 @@ Description: Divine - Personal Portfolio HTML5 Template
 }
 
 }
+// Profile-Services Ends Here 
+
+
+
+
+
+
+// Animation 
+// @keyframes FromZeroToHero {
+
+//   from 0% {
+//     background-color: white;
+//     color: #8750f7;
+//   }
+
+//   to 100% {
+//     background-color: #8750f7;
+//     color: #fff;
+//   }
+// }
