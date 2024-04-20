@@ -188,6 +188,7 @@ Description: Divine - Personal Portfolio HTML5 Template
 
 .row {
   max-width: 1135px;
+  min-height: 110vh;
   margin: 20px auto;
   overflow: auto;
   align-items: center;
@@ -295,14 +296,29 @@ Description: Divine - Personal Portfolio HTML5 Template
 
 
 .funfact-area {
+  margin-top: 70px;
   display: flex;
   flex-direction: row;   
-  gap: 100px;
+  gap: 110px;
+  color: #8750f7;
 
   &-item {
-    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
 
-    &-number {}
+    &-number {
+      display: flex;
+      align-items: center;
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    &-text {
+      line-height: 25px;
+    }
 }
 
 }
