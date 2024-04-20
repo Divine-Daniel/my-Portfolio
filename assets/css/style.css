@@ -30,6 +30,7 @@ Description: Divine - Personal Portfolio HTML5 Template
 
 -----------------------------------------------------------------------------------*/
 :root {
+  --linear-color: to right, #8750f7 5%, #2a1454 100%;
   --tj-ff-body: "Sora", sans-serif;
   --tj-ff-heading: "Sora", sans-serif;
   --tj-ff-russo: "Russo One", sans-serif;
@@ -93,6 +94,12 @@ body {
   font-weight: 400;
   min-height: 100%;
   overflow-x: hidden;
+}
+
+.lead {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
 }
 
 ul {
@@ -178,11 +185,15 @@ img {
   overflow: auto;
 }
 
-.row .hero-content-box {
+.hero-content-box {
   margin-top: 50px;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
+}
+
+.hero-content-box-intro {
+  margin-top: 40px;
+  margin-left: 10px;
 }
 
 .row .hero-content-box .hero-content-box-intro span {
@@ -191,11 +202,71 @@ img {
   font-weight: 600;
   color: var(--tj-theme-secondary);
   display: inline-block;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 
 .hero-content-box-intro h1 {
-  font-size: var(--tj-fz-h1);
+  font-size: 60px;
   font-family: Arial;
-  font-weight: bold;
+  font-weight: bolder;
+  color: var(--tj-theme-primary);
+  padding-bottom: 20px;
+}
+
+.button-box {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.button-box-download a {
+  display: inline-block;
+  border: 1px solid #8750f7;
+  padding: 1.2em 2.5em;
+  border-radius: 50px;
+  color: #8750f7;
+  font-size: 15px;
+  transition: 0.35s;
+}
+.button-box-download a:hover {
+  background-color: #8750f7;
+  color: #f6f3fc;
+}
+.button-box-download a .fa-download {
+  font-size: 13px;
+  padding-left: 8px;
+}
+.button-box ul {
+  display: flex;
+}
+.button-box ul li {
+  margin: 0 0 0 25px;
+}
+.button-box ul li a {
+  padding: 11px;
+  color: #8750f7;
+  border: 1px solid #8750f7;
+  border-radius: 50%;
+  transition: 0.35s ease-in-out;
+}
+.button-box ul li a:hover {
+  background-color: #8750f7;
+  color: #fff;
+}
+
+.hero-image-me {
+  margin-left: 80px;
+  margin-right: 50px;
+}
+.hero-image-me img {
+  width: 440px;
+  height: 470px;
+  transform: rotate(4.29deg);
+  transition: 0.3s;
+}
+.hero-image-me:hover img {
+  transform: none;
+  border-radius: 38px;
+  border: 2px solid var(--tj-theme-primary);
 }/*# sourceMappingURL=style.css.map */
