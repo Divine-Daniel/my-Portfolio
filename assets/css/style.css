@@ -88,7 +88,7 @@ Description: Divine - Personal Portfolio HTML5 Template
 }
 
 body {
-  font-family: "sora" sans-serif;
+  font-family: Arial;
   font-size: 15px;
   font-weight: 400;
   min-height: 100%;
@@ -118,7 +118,7 @@ img {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1190px;
   min-height: 140px;
   margin: auto;
   overflow: auto;
@@ -159,8 +159,8 @@ img {
 
 #hire-me ul li a {
   display: inline-block;
-  margin-left: 10px;
-  margin-right: 5px;
+  margin-left: 5px;
+  margin-right: 35px;
   padding: 1rem 2.2rem;
   color: white;
   background: linear-gradient(to right, #8750f7 5%, #2a1454 100%);
@@ -192,4 +192,10 @@ img {
   color: var(--tj-theme-secondary);
   display: inline-block;
   padding-bottom: 20px;
+}
+
+.hero-content-box-intro h1 {
+  font-size: var(--tj-fz-h1);
+  font-family: Arial;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
