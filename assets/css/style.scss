@@ -190,6 +190,7 @@ Description: Divine - Personal Portfolio HTML5 Template
   max-width: 1135px;
   margin: 20px auto;
   overflow: auto;
+  align-items: center;
 }
 
 .hero-content-box {
@@ -230,10 +231,13 @@ Description: Divine - Personal Portfolio HTML5 Template
   &-download a {
     display: inline-block;
     border: 1px solid #8750f7;
-    padding: 1.2em 2.5em;
+    padding: 1.3em 2.5em;
     border-radius: 50px;
     color: #8750f7;
+    letter-spacing: 1px;
+    line-height: 20px;
     font-size: 15px;
+    font-weight: 500;
     transition: 0.35s;
 
     &:hover {
@@ -251,10 +255,10 @@ Description: Divine - Personal Portfolio HTML5 Template
     display: flex;
 
     & li {
-      margin: 0 0 0 25px;
+      margin: 0 0 0 20px;
 
       & a {
-        padding: 11px;
+        padding: 0.5em;
         color: #8750f7;
         border: 1px solid #8750f7;
         border-radius: 50%;
@@ -286,5 +290,19 @@ Description: Divine - Personal Portfolio HTML5 Template
     border-radius: 38px;
     border: 2px solid var(--tj-theme-primary);
   }
+
+}
+
+
+.funfact-area {
+  display: flex;
+  flex-direction: row;   
+  gap: 100px;
+
+  &-item {
+    
+
+    &-number {}
+}
 
 }
