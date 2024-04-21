@@ -32,122 +32,123 @@ Description: Divine - Personal Portfolio HTML5 Template
 -----------------------------------------------------------------------------------*/
 
 :root {
-  --linear-color: to right,  #8750f7 5%, #2a1454 100%;
-    --tj-ff-body: "Sora", sans-serif;
-    --tj-ff-heading: "Sora", sans-serif;
-    --tj-ff-russo: "Russo One", sans-serif;
-    --tj-ff-fontawesome: "Font Awesome 6 Pro";
-    --tj-body: #dddddd;
-    --tj-white: #ffffff;
-    --tj-off-white: #f6f3fc;
-    --tj-black: #000000;
-    --tj-black-2: #050709;
-    --tj-heading-primary: #102039;
-    --tj-heading-secondary: #ea1826;
-    --tj-theme-primary: #8750f7;
-    --tj-theme-secondary: #2a1454;
-    --tj-theme-accent-1: #0f0715;
-    --tj-theme-accent-2: #140c1c;
-    --tj-grey-1: #747779;
-    --tj-grey-2: #d9d9d9;
-    --tj-grey-3: #dddddd;
-    --tj-grey-4: #22272c;
-    --tj-fw-normal: normal;
-    --tj-fw-elight: 200;
-    --tj-fw-light: 300;
-    --tj-fw-regular: 400;
-    --tj-fw-medium: 500;
-    --tj-fw-sbold: 600;
-    --tj-fw-bold: 700;
-    --tj-fw-ebold: 800;
-    --tj-fw-black: 900;
-    --tj-fz-body: 16px;
-    --tj-fz-btn: 15px;
-    --tj-fz-p: 18px;
-    --tj-fz-h1: 65px;
-    --tj-fz-h2: 45px;
-    --tj-fz-h3: 30px;
-    --tj-fz-h4: 24px;
-    --tj-fz-h5: 22px;
-    --tj-fz-h6: 18px;
-    --tj-fz-sub-title: 36px;
-  }
-  
-  :root {
-    --background-color: #ffffff;
-    --color: #140c1c;
-    --tj-theme-secondary: #2a1454;
-    --tj-theme-primary: #8750f7;
-    --tj-theme-accent-2: #140c1c;
-    --tj-white: #ffffff;
-  }
-  
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scrollbar-width: thin;
-    scrollbar-color: var(--tj-theme-primary) var(--tj-theme-secondary);
-  }
-  
-  body {
-    font-family: Arial;
-    font-size: 15px;
-    font-weight: 400;
-    min-height: 100%;
-    overflow-x: hidden;
-  }
+  --linear-color: to right, #8750f7 5%, #2a1454 100%;
+  --tj-ff-body: "Sora", sans-serif;
+  --tj-ff-heading: "Sora", sans-serif;
+  --tj-ff-russo: "Russo One", sans-serif;
+  --tj-ff-fontawesome: "Font Awesome 6 Pro";
+  --tj-body: #dddddd;
+  --tj-white: #ffffff;
+  --tj-off-white: #f6f3fc;
+  --tj-black: #000000;
+  --tj-black-2: #050709;
+  --tj-heading-primary: #102039;
+  --tj-heading-secondary: #ea1826;
+  --tj-theme-primary: #8750f7;
+  --tj-theme-secondary: #2a1454;
+  --tj-theme-accent-1: #0f0715;
+  --tj-theme-accent-2: #140c1c;
+  --tj-grey-1: #747779;
+  --tj-grey-2: #d9d9d9;
+  --tj-grey-3: #dddddd;
+  --tj-grey-4: #22272c;
+  --tj-fw-normal: normal;
+  --tj-fw-elight: 200;
+  --tj-fw-light: 300;
+  --tj-fw-regular: 400;
+  --tj-fw-medium: 500;
+  --tj-fw-sbold: 600;
+  --tj-fw-bold: 700;
+  --tj-fw-ebold: 800;
+  --tj-fw-black: 900;
+  --tj-fz-body: 16px;
+  --tj-fz-btn: 15px;
+  --tj-fz-p: 18px;
+  --tj-fz-h1: 65px;
+  --tj-fz-h2: 45px;
+  --tj-fz-h3: 30px;
+  --tj-fz-h4: 24px;
+  --tj-fz-h5: 22px;
+  --tj-fz-h6: 18px;
+  --tj-fz-sub-title: 36px;
+}
 
-  .lead {
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 300;
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #2c0872;
-  }
-  
-  .hero-box-image1 {
-    display: none;
-  }
-  
-  img {
-    width: 60.5px;
-  }
-  
-  .navbar {
-    width: 100%;
-    height: 140px;
-    // background-color: red;
-  }
-  
-  .container {
-    max-width: 1190px;
-    min-height: 140px;
-    margin: auto;
-    overflow: auto;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    // background-color: blue;
-  }
+:root {
+  --background-color: #ffffff;
+  --color: #140c1c;
+  --tj-theme-secondary: #2a1454;
+  --tj-theme-primary: #8750f7;
+  --tj-theme-accent-2: #140c1c;
+  --tj-white: #ffffff;
+}
 
-  .navbar .flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    font-size: 15px;
-    font-weight: 300;
-    word-wrap: initial;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: var(--tj-theme-primary) var(--tj-theme-secondary);
+}
+
+body {
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: 400;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+.lead {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #2c0872;
+}
+
+.hero-box-image1 {
+  display: none;
+}
+
+img {
+  width: 60.5px;
+}
+
+.navbar {
+  width: 100%;
+  height: 140px;
+  // background-color: red;
+}
+
+.container {
+  max-width: 1190px;
+  min-height: 140px;
+  margin: auto;
+  overflow: auto;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  // background-color: blue;
+}
+
+.navbar .flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 15.5px;
+  font-family: Arial;
+  font-weight: 500;
+  word-wrap: initial;
+}
 
 .logo-box {
   margin-left: 40px;
@@ -168,20 +169,28 @@ Description: Divine - Personal Portfolio HTML5 Template
   text-align: center;
 }
 
-#hire-me ul li a{
+#hire-me ul li a {
   display: inline-block;
   margin-left: 5px;
   margin-right: 35px;
   padding: 1rem 2.2rem;
   color: white;
-  background: linear-gradient(to right,  #8750f7 5%, #2a1454 100%);
-  font-weight: bold;
+  background: linear-gradient(to left, #2a1454 50%, #8750f7 100%);
+  background-size: 200%;
+  line-height: 1;
+  font-weight: 700;
   border-radius: 50px;
+  transition: 1s;
+
+  &:hover {
+    background: linear-gradient(to right, #2a1454 20%, #8750f7 100%);
+  }
 }
 
 .menu-bar {
   display: none;
 }
+
 // Navbar Ends Here 
 
 
@@ -215,11 +224,16 @@ Description: Divine - Personal Portfolio HTML5 Template
 }
 
 .hero-content-box-intro h1 {
-  font-size: 60px;
+  font-size: 65px;
   font-family: Arial;
-  font-weight: bolder;
-  color: var(--tj-theme-primary);
+  font-weight: 700;
+  background: linear-gradient(to right, #8750f7 0%, #2c0872 100%);
+  line-height: 1.2;
+  background-clip: text;
+  color: #2a1454;
   padding-bottom: 20px;
+  // -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .button-box {
@@ -252,7 +266,7 @@ Description: Divine - Personal Portfolio HTML5 Template
     }
   }
 
-  & ul{
+  & ul {
     display: flex;
     // transition: 5s;
 
@@ -261,11 +275,18 @@ Description: Divine - Personal Portfolio HTML5 Template
       // transition: 5s;
 
       & a {
-        padding: 0.5em;
+        position: relative;
+        padding: 0.7em;
+        width: 100%;
+        height: 100%;
         color: #8750f7;
         border: 1px solid #8750f7;
         border-radius: 50%;
         transition: 0.38s linear;
+
+        & i {
+          transform: 0.3s;
+        }
 
         &:hover {
           background-color: #8750f7;
@@ -301,7 +322,7 @@ Description: Divine - Personal Portfolio HTML5 Template
 .funfact-area {
   margin-top: 70px;
   display: flex;
-  flex-direction: row;   
+  flex-direction: row;
   gap: 110px;
   color: #8750f7;
 
@@ -322,11 +343,14 @@ Description: Divine - Personal Portfolio HTML5 Template
     &-text {
       line-height: 25px;
     }
-}
+  }
 
 }
+
 // Profile-Services Ends Here 
-
+#Profile-Services {
+  background-color: #f6f3fc;
+}
 
 
 
