@@ -190,11 +190,12 @@ img {
 .menu-bar {
   display: none;
 }
-
 // Navbar Ends Here 
 
 
-// Profile-Services Begins Here 
+
+
+// Profile-Hire-Me Begins Here 
 .row {
   max-width: 1135px;
   min-height: 110vh;
@@ -232,7 +233,6 @@ img {
   background-clip: text;
   color: #2a1454;
   padding-bottom: 20px;
-  // -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -268,11 +268,9 @@ img {
 
   & ul {
     display: flex;
-    // transition: 5s;
 
     & li {
       margin: 0 0 0 20px;
-      // transition: 5s;
 
       & a {
         position: relative;
@@ -346,15 +344,19 @@ img {
   }
 
 }
+// Profile-Hire-Me Ends Here
 
-// Profile-Services Ends Here 
+
+
+
+// Profile-Services Begins Here 
 #Profile-Services {
   background-color: #f6f3fc;
-  padding: 120px 120px;
+  padding: 80px 80px;
 }
 
 .row-1 {
-  max-width: 1135px;
+  max-width: 100%;
   max-height: 100vh;
   margin: 20px auto;
   overflow: auto;
@@ -383,7 +385,7 @@ img {
     }
 
     & p {
-      margin: 20px 0 0 0;
+      margin: 15px 0 0 0;
       font-size: 18px;
       text-align: center;
       line-height: 30px;
@@ -391,12 +393,14 @@ img {
   }
 
   .service-widget {
+    align-items: center;
+    min-width: 100px;
     margin: 0 1.5rem 0 1.5rem;
     padding: 0 1.5rem 0 1.5rem;
     position: relative !important;
 
     .service-item {
-      cursor: pointer;
+      width: 100%x;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -405,14 +409,33 @@ img {
       position: relative;
       border-bottom: 1px solid #dddddd;
       z-index: 2;
+      transition-delay: 2s;
+      transition: all 3s ease;
 
       &:hover {
-        width: 1000px;
+        width: 100%;
         border: none;
         color: #fff;
         background: linear-gradient(to right, var(--tj-theme-primary) 30%, var(--tj-theme-secondary) 100%);
       }
-      
+      &:hover .left-box{
+          
+          span,h3{
+            color: #fff;
+          }
+      }
+      &:hover .right-box{
+        p{
+          color: #fff;
+        }
+    }
+
+    &:hover .fa-up-long {
+      transform: translateY(-50%) rotate(47deg);
+      -webkit-transform: translateY(-50%) rotate(47deg);
+      -ms-transform: translateY(-50%) rotate(47deg);
+    }
+
       .left-box {
         width: calc(40% - 10px);
         gap: 20px;
@@ -466,15 +489,26 @@ img {
         position: absolute;
         top: 50%;
         right: 55px;
-        transform: translateY(-50%) rotate(50deg);
-        -webkit-transform: translateY(-50%) rotate(50deg);
-        -ms-transform: translateY(-50%) rotate(50deg);
+        transform: translateY(-50%) rotate(130deg);
+        -webkit-transform: translateY(-50%) rotate(130deg);
+        -ms-transform: translateY(-50%) rotate(130deg);
         transition: all 0.5s ease;
         -webkit-transition: all 0.5s ease;
       }
 
     }
   }
+}
+// Profile-Services Begins Here 
+
+
+
+
+// Portfolio-section Begin Here
+.portfolio-section {
+  background-color: #fff;
+  padding-top: 120px;
+  padding-bottom: 80px;
 }
 
 

@@ -320,11 +320,11 @@ img {
 
 #Profile-Services {
   background-color: #f6f3fc;
-  padding: 120px 120px;
+  padding: 80px 80px;
 }
 
 .row-1 {
-  max-width: 1135px;
+  max-width: 100%;
   max-height: 100vh;
   margin: 20px auto;
   overflow: auto;
@@ -352,18 +352,20 @@ img {
   gap: 15px;
 }
 .row-service-heading p {
-  margin: 20px 0 0 0;
+  margin: 15px 0 0 0;
   font-size: 18px;
   text-align: center;
   line-height: 30px;
 }
 .row-service .service-widget {
+  align-items: center;
+  min-width: 100px;
   margin: 0 1.5rem 0 1.5rem;
   padding: 0 1.5rem 0 1.5rem;
   position: relative !important;
 }
 .row-service .service-widget .service-item {
-  cursor: pointer;
+  width: 100% x;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -372,12 +374,25 @@ img {
   position: relative;
   border-bottom: 1px solid #dddddd;
   z-index: 2;
+  transition-delay: 2s;
+  transition: all 3s ease;
 }
 .row-service .service-widget .service-item:hover {
-  width: 1000px;
+  width: 100%;
   border: none;
   color: #fff;
   background: linear-gradient(to right, var(--tj-theme-primary) 30%, var(--tj-theme-secondary) 100%);
+}
+.row-service .service-widget .service-item:hover .left-box span, .row-service .service-widget .service-item:hover .left-box h3 {
+  color: #fff;
+}
+.row-service .service-widget .service-item:hover .right-box p {
+  color: #fff;
+}
+.row-service .service-widget .service-item:hover .fa-up-long {
+  transform: translateY(-50%) rotate(47deg);
+  -webkit-transform: translateY(-50%) rotate(47deg);
+  -ms-transform: translateY(-50%) rotate(47deg);
 }
 .row-service .service-widget .service-item .left-box {
   width: calc(40% - 10px);
@@ -421,9 +436,15 @@ img {
   position: absolute;
   top: 50%;
   right: 55px;
-  transform: translateY(-50%) rotate(50deg);
-  -webkit-transform: translateY(-50%) rotate(50deg);
-  -ms-transform: translateY(-50%) rotate(50deg);
+  transform: translateY(-50%) rotate(130deg);
+  -webkit-transform: translateY(-50%) rotate(130deg);
+  -ms-transform: translateY(-50%) rotate(130deg);
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
+}
+
+.portfolio-section {
+  background-color: #fff;
+  padding-top: 120px;
+  padding-bottom: 80px;
 }/*# sourceMappingURL=style.css.map */
