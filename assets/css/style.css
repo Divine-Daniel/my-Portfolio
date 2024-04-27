@@ -365,11 +365,11 @@ img {
   position: relative !important;
 }
 .row-service .service-widget .service-item {
-  width: 100% x;
+  min-width: 100% x;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 40px;
+  padding: 0 50px;
   gap: 20px;
   position: relative;
   border-bottom: 1px solid #dddddd;
@@ -418,12 +418,11 @@ img {
 .row-service .service-widget .service-item .right-box {
   width: calc(60% - 10px);
   padding: 30px 0;
-  padding-right: 10%;
   line-height: 25px;
 }
 .row-service .service-widget .service-item .right-box p {
   color: var(--tj-theme-secondary);
-  font-size: 16px;
+  font-size: 19px;
   margin-bottom: 0;
   margin-top: 0;
   transition: all 0.5s ease;
@@ -444,7 +443,38 @@ img {
 }
 
 .portfolio-section {
-  background-color: #fff;
+  background: radial-gradient(circle, #c7c5cc, #fff, #fff, #fff);
   padding-top: 120px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 80px;
+}
+.portfolio-section .section-header {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  max-width: 650px;
+  width: 100%;
+}
+.portfolio-section .section-header h1 {
+  text-align: center;
+  font-size: 50px;
+  background: linear-gradient(to left, var(--tj-theme-secondary) 5%, var(--tj-theme-primary) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  gap: 15px;
+}
+.portfolio-section .section-header p {
+  margin: 15px 0 0 0;
+  font-size: 18px;
+  text-align: center;
+  line-height: 30px;
+}
+.portfolio-section .main-portfolio {
+  padding: 0 20px;
+}
+.portfolio-section .main-portfolio .portfolio-filter {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
