@@ -190,6 +190,7 @@ img {
 .menu-bar {
   display: none;
 }
+
 // Navbar Ends Here 
 
 
@@ -344,6 +345,7 @@ img {
   }
 
 }
+
 // Profile-Hire-Me Ends Here
 
 
@@ -418,23 +420,26 @@ img {
         color: #fff;
         background: linear-gradient(to right, var(--tj-theme-primary) 30%, var(--tj-theme-secondary) 100%);
       }
-      &:hover .left-box{
-          
-          span,h3{
-            color: #fff;
-          }
-      }
-      &:hover .right-box{
-        p{
+
+      &:hover .left-box {
+
+        span,
+        h3 {
           color: #fff;
         }
-    }
+      }
 
-    &:hover .fa-up-long {
-      transform: translateY(-50%) rotate(47deg);
-      -webkit-transform: translateY(-50%) rotate(47deg);
-      -ms-transform: translateY(-50%) rotate(47deg);
-    }
+      &:hover .right-box {
+        p {
+          color: #fff;
+        }
+      }
+
+      &:hover .fa-up-long {
+        transform: translateY(-50%) rotate(47deg);
+        -webkit-transform: translateY(-50%) rotate(47deg);
+        -ms-transform: translateY(-50%) rotate(47deg);
+      }
 
       .left-box {
         width: calc(40% - 10px);
@@ -499,13 +504,14 @@ img {
     }
   }
 }
+
 // Profile-Services Begins Here 
 
 
 
 // Portfolio-section Begin Here
 .portfolio-section {
-  background: radial-gradient(circle, #c7c5cc, #fff, #fff, #fff);
+  background: radial-gradient(circle, #dddbe2, #fff, #fff, #fff, #fff);
   padding-top: 120px;
   padding-left: 10px;
   padding-right: 10px;
@@ -518,7 +524,7 @@ img {
     margin-bottom: 50px;
     max-width: 650px;
     width: 100%;
-  
+
     h1 {
       text-align: center;
       font-size: 50px;
@@ -528,7 +534,7 @@ img {
       -webkit-text-fill-color: transparent;
       gap: 15px;
     }
-  
+
     p {
       margin: 15px 0 0 0;
       font-size: 18px;
@@ -542,10 +548,36 @@ img {
 
     .portfolio-filter {
       text-align: center;
-      
-      .button-filter {
-        background-color: ;
+
+      .button-group {
+        background-color: #f6f3fc;
+        position: relative;
+        display: inline-block;
+        padding: 6px 8px;
+        border-radius: 60px;
+
+        .button {
+          padding: 12px 25px;
+          border: none;
+          border-radius: 50px;
+          background-color: transparent;
+          color: #8750f7;
+          font-size: 15px;
+          line-height: 1;
+          position: relative;
+          cursor: pointer;
+          
+          :hover {
+            background-image: linear-gradient(to left, #2a1454 50%, #8750f7 100%);
+          }
+        }
+
+
       }
+    }
+
+    .portfolio-box {
+        
     }
   }
 }
