@@ -522,7 +522,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
-    max-width: 650px;
+    width: 650px;
     width: 100%;
 
     h1 {
@@ -558,7 +558,7 @@ img {
         border-radius: 60px;
         transition: all 1s ease;
 
-        & .button{
+        & .button {
           padding: 16px 25px;
           border: none;
           border-radius: 50px;
@@ -569,17 +569,17 @@ img {
           position: relative;
           cursor: pointer;
           transition: all 0.35s ease;
-          
+
           &:hover {
             background: linear-gradient(to right, #2a1454 50%, #8750f7 100%);
             background: -webkit-linear-gradient(to right, #2a1454 50%, #8750f7 100%);
             color: white;
           }
 
-            &:first-child {
-              background: linear-gradient(to right, #2a1454 50%, #8750f7 100%);
-              background: -webkit-linear-gradient(to right, #2a1454 50%, #8750f7 100%);
-              color: white;
+          &:first-child {
+            background: linear-gradient(to right, #2a1454 50%, #8750f7 100%);
+            background: -webkit-linear-gradient(to right, #2a1454 50%, #8750f7 100%);
+            color: white;
           }
         }
 
@@ -588,85 +588,104 @@ img {
     }
 
     .portfolio-box {
-        min-width: 170vh;
-        height: 240vh;
-        display: grid;
-        place-items: center;
-        grid-template-columns: repeat(2, 50%);
-        gap: 10px;
-        // border: 2px solid red;
-        
-        .portfolio-item {
-          padding: 0;
-          width: 100%;
-          height: 450px;
-          position: relative;
-          transition: all 1s ease-in-out;
-          
-          .image-box {
-            width: 530px;
-            height: 430px;
-            border-radius: 10px;
-            border-top: 35px solid #140c1c;
-            border-left: 35px solid #140c1c;
-            border-right: 35px solid #140c1c;
-            // border: 1px solid green;
-            // transform: rotate(-320deg);
+      position: relative;
+      min-width: 60%;
+      height: 160vh;
+      display: grid;
+      place-items: center;
+      grid-template-columns: repeat(2, 50%);
+      gap: 10px;
 
-            &:hover .fa-up-long {
-              bottom: 70px;
-            }
 
-            img {
-              width: 100%;
-              height: 100%;
-            }
+      .portfolio-item {
+        background-color: var(--tj-theme-accent-2);
+        margin-bottom: 4%;
+        padding: 36px 36px 0 36px;
+        border-radius: 10px;
+        width: 48%;
+
+        &:hover .content-box {
+          opacity: 1;
+          color: white;
+          visibility: visible;
+          bottom: 30px;
+          cursor: pointer;
+        }
+
+        &:hover .content-box .fa-up-long {
+          transform: translateY(-50%) rotate(-320deg);
+        }
+
+        .image-box {
+          text-align: center;
+          width: 464px;
+          height: 399px;
+          // border: 1px solid green;
+          // transform: rotate(-320deg);
+
+          // &:hover .fa-up-long {
+          //   bottom: 70px;
+          // }
+
+          img {
+            width: 100%;
+            height: 100%;
           }
 
-          .image-box:hover  .content-box{
-            opacity: 1;
-            position: absolute;
-            top: 0px;
-            cursor: pointer;
-            border: 2px solid red;
+        }
+
+        .content-box {
+          // color: white;
+          position: absolute;
+          bottom: -15px;
+          left: 0px;
+          width: calc(100% - 40px);
+          border-radius: 15px;
+          margin: 0 auto;
+          right: 0px;
+          padding: 25px;
+          padding-right: 50px;
+          opacity: 0;
+          visibility: hidden;
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s;
+          -webkit-transform: translateY(15px);
+          -ms-transform: translateY(15px);
+          transform: translateY(15px);
+          background: linear-gradient(to right, #8750f7 50%, #2a1454 100%);
+
+
+          h3 {
+            font-size: 35px;
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-bottom: 15px;
           }
 
-          .content-box {
-            margin-left: 14px;
-            width: 89%;
-            height: 25%;
-            padding: 15px 20px;
-            border-radius: 10px;         
-            background: linear-gradient(to right, #8750f7 50%, #2c0872 100%);
+          .fa-up-long {
+            font-size: 20px;
+            line-height: 1;
             color: white;
-            transition: 1s;
             position: absolute;
-            bottom: 10;
-            opacity: 1; 
+            left: 450px;
+            bottom: 60px;
+            transform: translateY(-50%);
+            transform-origin: center;
+            transition: 0.5s;
+          }
 
-            h3 {
-              font-size: 35px;
-              font-weight: 700;
-              font-family:  Arial, Helvetica, sans-serif;
-              padding-bottom: 15px;
-            }
-
-            .fa-up-long {
-              position: absolute;
-              left: 460px;
-              bottom: -60px;
-              transform: rotate(-320deg);
-            }
-
-            p {
-              font-size: 17px;
-              font-weight: 500;
-            }
+          p {
+            font-size: 17px;
+            font-weight: 500;
           }
         }
+      }
     }
   }
 }
+
+
 
 
 
