@@ -580,4 +580,229 @@ img {
 .portfolio-section .main-portfolio .portfolio-box .portfolio-item .content-box p {
   font-size: 17px;
   font-weight: 500;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.resume-section {
+  background-color: #f6f3fc;
+  padding: 120px 0 90px 0;
+}
+
+.row {
+  max-width: 1140px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.resume {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.resume .resume-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 50px;
+  max-width: 700px;
+  width: 100%;
+  background: linear-gradient(to right, var(--tj-theme-primary) 0%, var(--tj-theme-secondary) 100%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.resume .resume-header img {
+  width: 45px;
+  color: #8750f7;
+}
+.resume .resume-header h1 {
+  font-size: 45px;
+  font-family: Arial;
+}
+.resume .resume-widget {
+  padding-right: 20px;
+}
+.resume .resume-widget .resume-item {
+  position: relative;
+  padding: 20px 30px;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  margin-right: 100px;
+  transition: 0.5s linear;
+}
+.resume .resume-widget .resume-item .time {
+  color: var(--tj-theme-primary);
+  font-size: 20.5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.resume .resume-widget .resume-item .resume-title {
+  color: var(--tj-theme-secondary);
+  font-size: 25px;
+  font-weight: 700;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-bottom: 8px;
+  transform: uppercase;
+}
+
+.resume-widget .resume-item {
+  transition: 1s ease-in;
+  background: var(--tj-white);
+}
+
+.resume-widget .resume-item:hover {
+  cursor: pointer;
+  color: white;
+  background: var(--tj-theme-primary);
+  background: linear-gradient(190deg, var(--tj-theme-secondary) 0%, var(--tj-theme-primary) 100%);
+}
+
+.resume-widget .resume-item:hover .time {
+  color: var(--tj-white);
+}
+
+.resume-widget .resume-item .resume-title {
+  color: var(--tj-theme-secondary);
+}
+
+.resume-widget .resume-item:hover .resume-title {
+  color: white;
+}
+
+.resume-widget .resume-item .institute {
+  font-size: 16px;
+}
+
+.resume-widget .resume-item:hover .institute {
+  color: white;
+}
+
+/*************************
+Skill Section Starts Here
+**************************/
+.skill-section {
+  background: var(--tj-white);
+  padding: 120px 0px;
+}
+
+.skill-section .row {
+  max-width: 1180px;
+  min-height: 250px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.skill-section .row .container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.skill-section .row .container .section-header {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+}
+.skill-section .row .container .section-header .section-title {
+  font-size: 45px;
+  background: linear-gradient(to left, var(--tj-theme-secondary) 20%, var(--tj-theme-primary) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-flex;
+  gap: 15px;
+  margin-bottom: 0;
+}
+.skill-section .row .container .section-header p {
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.skill-section .row .container .skill-widget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  row-gap: 30px;
+}
+.skill-section .row .container .skill-widget .skill-item-card {
+  max-width: 180px;
+  width: 100%;
+  text-align: center;
+  transition: 0.6s;
+}
+.skill-section .row .container .skill-widget .skill-item-card:hover {
+  margin-bottom: 30px;
+}
+.skill-section .row .container .skill-widget .skill-item-card p {
+  color: var(--tj-theme-primary);
+  font-size: 16px;
+  line-height: 25px;
+}
+.skill-section .row .container .skill-widget .skill-item-card:hover .skill-inner {
+  background: var(--tj-theme-secondary);
+  border: 1px solid var(--tj-theme-primary);
+}
+.skill-section .row .container .skill-widget .skill-item-card:hover .skill-inner .icon-box img {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  transform: scale(1.1);
+}
+.skill-section .row .container .skill-widget .skill-item-card:hover .number {
+  color: var(--tj-theme-primary);
+}
+.skill-section .row .container .skill-widget .skill-item-card .skill-inner {
+  width: 160px;
+  height: 175px;
+  background: var(--tj-off-white);
+  border-radius: 25px;
+  padding: 40px 15px 30px;
+  border: 1px solid transparent;
+  margin-bottom: 15px;
+  transition: 0.6s;
+  padding-bottom: 20px;
+}
+.skill-section .row .container .skill-widget .skill-item-card .skill-inner .icon-box {
+  max-width: 150px;
+  width: 100%;
+  margin: 0 auto 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.skill-section .row .container .skill-widget .skill-item-card .skill-inner .icon-box img {
+  width: 100%;
+  filter: grayscale(90%);
+  -webkit-filter: grayscale(90%);
+  transition: 0.3s;
+}
+.skill-section .row .container .skill-widget .skill-item-card .skill-inner .number {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--tj-grey-1);
+}
+
+/*************************
+Skill Section Ends Here
+**************************/
+/*************************
+Testimonial Section Starts Here
+**************************/
+.testimonial-section {
+  background: var(--tj-off-white);
+  padding: 120px 0;
+  position: relative;
+}
+
+/*************************
+Testimonial Section Ends Here
+**************************//*# sourceMappingURL=style.css.map */
