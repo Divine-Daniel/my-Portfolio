@@ -1,7 +1,5 @@
 {
-    "liveSassCompile.settings.forceBaseDirectory": "",
-    "liveSassCompile.settings.includeItems": [
-        
-    ],
-    "compile-hero.disable-compile-files-on-did-save-code": true
+  "liveSassCompile.settings.forceBaseDirectory": "",
+  "liveSassCompile.settings.includeItems": [],
+  "compile-hero.disable-compile-files-on-did-save-code": true
 }
